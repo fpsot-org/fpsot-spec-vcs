@@ -1,5 +1,4 @@
 = Règles Git
-:translation-status: pending
 
 Ces règles s’appliquent aux dépôts Git.
 Elles complètent les xref:generic.adoc[règles générales].

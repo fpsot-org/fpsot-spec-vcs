@@ -1,5 +1,4 @@
 = Règles générales
-:translation-status: pending
 
 Ces règles s’appliquent à tout système de gestion des versions.
 Elles portent sur les commits, leurs messages et l’identité des auteurs.
