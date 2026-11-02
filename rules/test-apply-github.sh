@@ -11,5 +11,11 @@ for want in "repos/fpsot-org/example/rulesets" "allow_merge_commit=false" "allow
 done
 bash "$here/apply-github.sh" --dry-run >/dev/null 2>&1 && { echo "FAIL: missing repo argument must fail"; fail=1; }
 python3 -c 'import json,sys; r=json.load(open(sys.argv[1])); t={x["type"] for x in r["rules"]}; need={"deletion","non_fast_forward","required_signatures","required_linear_history","pull_request"}; sys.exit(0 if need<=t and r["name"]=="fpsot-vcs" else 1)' "$here/github-ruleset.json" || { echo "FAIL: ruleset content"; fail=1; }
+out="$(bash "$here/apply-github.sh" --dry-run --checks "ci / one,ci / two" fpsot-org/example 2>&1)"
+for want in '"type": "required_status_checks"' '"context": "ci / one"' '"context": "ci / two"'; do
+  case "$out" in *"$want"*) ;; *) echo "FAIL: --checks output lacks $want"; fail=1 ;; esac
+done
+out="$(bash "$here/apply-github.sh" --dry-run fpsot-org/example 2>&1)"
+case "$out" in *required_status_checks*) echo "FAIL: no --checks must not require checks"; fail=1 ;; esac
 [ $fail -eq 0 ] && echo PASS
 exit $fail

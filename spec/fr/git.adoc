@@ -40,14 +40,17 @@ Le numéro DOIT suivre link:https://semver.org/lang/fr/spec/v2.0.0.html[Semantic
 Tout le monde peut alors vérifier qui a publié la version et ce qu’elle contient.
 
 [[VCS-107]]
-*VCS-107.* Un projet PEUT créer une branche `release/N.x` seulement tant que la version majeure N a besoin de correctifs.
+*VCS-107.* Un projet PEUT créer une branche `release/N.x` pour corriger la version majeure N.
+Il PEUT le faire seulement après la sortie de la version N+1.
+Avant cela, les correctifs de la version N vont sur `main`.
 La plupart des projets ne maintiennent que leur dernière version majeure.
 
 == Clés de signature
 
 [[VCS-108]]
 *VCS-108.* Les auteurs DEVRAIENT signer avec une clé SSH.
-Les projets PEUVENT aussi accepter les clés GPG et Sigstore gitsign.
+Les projets PEUVENT aussi accepter les clés GPG.
+GitHub ne vérifie pas les signatures Sigstore gitsign, donc les vérifications les refusent.
 Git et GitHub acceptent la signature SSH avec la clé que la plupart des personnes ont déjà.
 
 == Protection des branches

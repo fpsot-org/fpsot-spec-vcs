@@ -40,7 +40,9 @@ The version MUST follow link:https://semver.org/spec/v2.0.0.html[Semantic Versio
 Anyone can then check who published the release and what it contains.
 
 [[VCS-107]]
-*VCS-107.* A project MAY create a `release/N.x` branch only while major version N still needs fixes.
+*VCS-107.* A project MAY create a `release/N.x` branch to fix major version N.
+It MAY do so only after version N+1 ships.
+Before that, fixes for version N go on `main`.
 Most projects support only their latest major version.
 A release branch adds work, so it exists only when users need it.
 
@@ -48,7 +50,8 @@ A release branch adds work, so it exists only when users need it.
 
 [[VCS-108]]
 *VCS-108.* Authors SHOULD sign with an SSH key.
-Projects MAY also accept GPG keys and Sigstore gitsign.
+Projects MAY also accept GPG keys.
+GitHub does not verify Sigstore gitsign signatures, so the checks reject them.
 Git and GitHub support SSH signing with the key most developers already have.
 
 == Branch protection

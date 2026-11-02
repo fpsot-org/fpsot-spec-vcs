@@ -6,6 +6,16 @@ and versions follow [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.h
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-11-01
+
+### Fixed
+
+- VCS-001: the rationale now matches squash merges. GitHub signs the commit on `main`; the author signs each pull request commit.
+- VCS-002: unsigned commits are rejected in pull requests too, not only on protected branches.
+- VCS-107: a release branch is created only after the next major version ships.
+- VCS-108: Sigstore gitsign is no longer listed, because GitHub does not verify its signatures.
+- `rules/apply-github.sh --checks` makes the CI checks required before a merge.
+
 ## [0.1.0] - 2026-11-01
 
 ### Added
@@ -16,5 +26,6 @@ and versions follow [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.h
 - Guide on signing, email privacy, branch names and releases.
 - French text reviewed by the project lead.
 
-[Unreleased]: https://github.com/fpsot-org/fpsot-spec-vcs/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/fpsot-org/fpsot-spec-vcs/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/fpsot-org/fpsot-spec-vcs/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/fpsot-org/fpsot-spec-vcs/releases/tag/v0.1.0

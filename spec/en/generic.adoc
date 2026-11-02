@@ -7,11 +7,12 @@ They cover commits, commit messages and identity.
 
 [[VCS-001]]
 *VCS-001.* The author MUST sign every commit with a cryptographic key.
-A signature proves who made the change.
+A signature proves who made each commit in a pull request.
 Nobody can then add a commit in someone else's name.
+After a squash merge, GitHub signs the single commit on `main` with its own key.
 
 [[VCS-002]]
-*VCS-002.* A protected branch MUST reject unsigned commits.
+*VCS-002.* The repository MUST reject unsigned commits on protected branches and in pull requests.
 The signing rule only holds when the server enforces it.
 
 == Commit messages

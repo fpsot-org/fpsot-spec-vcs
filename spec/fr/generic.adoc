@@ -7,11 +7,12 @@ Elles portent sur les commits, leurs messages et l’identité des auteurs.
 
 [[VCS-001]]
 *VCS-001.* L’auteur DOIT signer chaque commit avec une clé cryptographique.
-La signature prouve qui a fait la modification.
+La signature prouve qui a fait chaque commit d’une demande de tirage.
 Personne ne peut alors ajouter un commit au nom d’une autre personne.
+Après une fusion par écrasement, GitHub signe le commit unique sur `main` avec sa propre clé.
 
 [[VCS-002]]
-*VCS-002.* Une branche protégée DOIT refuser les commits non signés.
+*VCS-002.* Le dépôt DOIT refuser les commits non signés sur les branches protégées et dans les demandes de tirage.
 La règle de signature ne tient que si le serveur l’applique.
 
 == Messages de commit
