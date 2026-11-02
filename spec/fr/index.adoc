@@ -1,0 +1,17 @@
+= Titre de la spécification
+:translation-status: pending
+
+Remplacez cette page par le texte normatif de la spécification.
+Commencez par la portée, puis les classes de conformité, puis les exigences.
+
+== Conformité
+
+Les mots clés en majuscules suivent le sens défini dans BCP 14 (RFC 2119, RFC 8174).
+En français, DOIT correspond à MUST et NE DOIT PAS à MUST NOT.
+DEVRAIT correspond à SHOULD et NE DEVRAIT PAS à SHOULD NOT.
+PEUT correspond à MAY.
+
+== Exigences
+
+Donnez à chaque exigence une ancre avec son identifiant, juste au-dessus de son paragraphe.
+L'ancre ressemble à `+[[XYZ-001]]+`.

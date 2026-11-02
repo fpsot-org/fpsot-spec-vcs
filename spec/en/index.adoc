@@ -1,0 +1,16 @@
+= Specification title
+
+Replace this page with the normative text of the specification.
+Start with the scope, then the conformance classes, then the requirements.
+
+== Conformance
+
+[quote, RFC 8174]
+____
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in BCP 14 (RFC 2119, RFC 8174) when, and only when, they appear in all capitals, as shown here.
+____
+
+== Requirements
+
+Give each requirement an anchor line with its ID, directly above its paragraph.
+The anchor looks like `+[[XYZ-001]]+`.

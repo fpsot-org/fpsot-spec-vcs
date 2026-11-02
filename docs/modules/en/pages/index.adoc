@@ -1,0 +1,3 @@
+= Guide
+
+This page explains the specification for the people who adopt it.

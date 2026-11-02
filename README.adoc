@@ -1,0 +1,46 @@
+= FPSOT specification template
+
+This repository is the starting point for an FPSOT specification.
+Create a new repository from it, then replace this text.
+
+== Implement this spec
+
+Read the normative text in `spec/en/` or `spec/fr/`.
+Each requirement has an ID, such as `XYZ-001`.
+Check your implementation against every requirement.
+
+== Adopt this spec
+
+Read the guides in `docs/modules/en/pages/` or `docs/modules/fr/pages/`.
+They explain what the spec gives your organisation and how to require it.
+
+== Layout
+
+[cols="1,3"]
+|===
+| Folder | Content
+
+| `spec/`
+| Normative text, in English and French.
+
+| `docs/`
+| Guides, in the Antora folder layout.
+
+| `skill/`
+| The agent skill: a short summary that cites requirement IDs.
+
+| `rules/`
+| Machine-checkable rules.
+
+| `diagrams/`
+| PlantUML sources and their rendered SVG files.
+
+| `jurisdictions/`
+| Comparison data per jurisdiction.
+|===
+
+== Licence
+
+The specification is under the Community Specification License 1.0.
+Source code is under the Apache License 2.0.
+See `LICENSE.md` and `NOTICE`.
