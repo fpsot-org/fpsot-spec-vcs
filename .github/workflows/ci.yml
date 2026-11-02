@@ -10,7 +10,7 @@ permissions:
   contents: read
 env:
   # Requirement ID prefix of this specification.
-  SPEC_PREFIX: TPL
+  SPEC_PREFIX: VCS
 jobs:
   prefix:
     runs-on: ubuntu-latest
@@ -39,3 +39,9 @@ jobs:
     uses: fpsot-org/GitHub-Actions/.github/workflows/spec-release.yml@v0
     with:
       prefix: ${{ needs.prefix.outputs.value }}
+  rules-test:
+    if: github.ref_type != 'tag'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - run: bash rules/test-apply-github.sh

@@ -1,0 +1,37 @@
+= Generic rules
+
+These rules apply to any version control system.
+They cover commits, commit messages and identity.
+
+== Signed commits
+
+[[VCS-001]]
+*VCS-001.* The author MUST sign every commit with a cryptographic key.
+A signature proves who made the change.
+Nobody can then add a commit in someone else's name.
+
+[[VCS-002]]
+*VCS-002.* A protected branch MUST reject unsigned commits.
+The signing rule only holds when the server enforces it.
+
+== Commit messages
+
+[[VCS-003]]
+*VCS-003.* Every commit message MUST follow link:https://www.conventionalcommits.org/en/v1.0.0/[Conventional Commits 1.0.0].
+Tools read the type of each change.
+They then build the changelog and pick the next version number.
+
+[[VCS-004]]
+*VCS-004.* A commit SHOULD contain one logical change.
+A reviewer can then read, test and revert each change on its own.
+
+[[VCS-005]]
+*VCS-005.* A commit SHOULD reference its issue when one exists.
+The issue holds the reason for the change.
+
+== Identity
+
+[[VCS-006]]
+*VCS-006.* Contributors SHOULD commit with a no-reply email address.
+Commit history is public and permanent.
+A personal address in it invites spam and exposes the person.

@@ -1,18 +1,19 @@
-= FPSOT specification template
+= FPSOT version control specification
 
-This repository is the starting point for an FPSOT specification.
-Create a new repository from it, then replace this text.
+Rules for version control in FPSOT projects: signed commits, commit messages, branches, merging and releases.
+Version 0.1 is a draft.
 
 == Implement this spec
 
 Read the normative text in `spec/en/` or `spec/fr/`.
-Each requirement has an ID, such as `XYZ-001`.
-Check your implementation against every requirement.
+The generic part applies to any version control system.
+The Git part applies to Git repositories.
+Each requirement has an ID from `VCS-001` to `VCS-110`.
 
 == Adopt this spec
 
-Read the guides in `docs/modules/en/pages/` or `docs/modules/fr/pages/`.
-They explain what the spec gives your organisation and how to require it.
+Read the guide in `docs/modules/en/pages/index.adoc` or `docs/modules/fr/pages/index.adoc`.
+To apply the rules to a GitHub repository, run `rules/apply-github.sh OWNER/REPO`.
 
 == Layout
 
@@ -30,13 +31,10 @@ They explain what the spec gives your organisation and how to require it.
 | The agent skill: a short summary that cites requirement IDs.
 
 | `rules/`
-| Machine-checkable rules.
+| The GitHub ruleset and the script that applies it.
 
 | `diagrams/`
-| PlantUML sources and their rendered SVG files.
-
-| `jurisdictions/`
-| Comparison data per jurisdiction.
+| The branch model, as PlantUML source and SVG.
 |===
 
 == Licence

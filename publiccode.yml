@@ -1,6 +1,6 @@
 publiccodeYmlVersion: "0.4"
-name: FPSOT specification template
-url: "https://github.com/fpsot-org/fpsot-spec-template"
+name: FPSOT version control specification
+url: "https://github.com/fpsot-org/fpsot-spec-vcs"
 platforms:
   - web
 categories:
@@ -9,22 +9,22 @@ developmentStatus: concept
 softwareType: "standalone/other"
 description:
   en:
-    shortDescription: Template for FPSOT specification repositories.
+    shortDescription: Version control rules for FPSOT projects.
     longDescription: >
-      Starting point for an FPSOT specification repository. It holds the
-      layout, the Community Specification License files, and the CI that
-      checks requirement IDs, links, languages and prose.
+      Rules for signed commits, commit messages, branches, merging and
+      releases in FPSOT projects, with a GitHub ruleset that enforces them.
     features:
-      - Specification repository layout
+      - Signed commits and releases
+      - Trunk-based development with squash merges
   fr:
-    shortDescription: Gabarit des dépôts de spécification de FPSOT.
+    shortDescription: Règles de gestion des versions des projets FPSOT.
     longDescription: >
-      Point de départ d'un dépôt de spécification de FPSOT. Il contient la
-      structure, les fichiers de la Community Specification License, et
-      l'intégration continue qui vérifie les identifiants, les liens, les
-      langues et la rédaction.
+      Règles sur les commits signés, les messages de commit, les branches,
+      la fusion et les versions des projets FPSOT, avec un ensemble de
+      règles GitHub qui les applique.
     features:
-      - Structure d'un dépôt de spécification
+      - Commits et versions signés
+      - Tronc commun et fusion par écrasement
 legal:
   license: Community-Spec-1.0
 maintenance:

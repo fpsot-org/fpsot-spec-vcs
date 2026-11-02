@@ -1,17 +1,18 @@
-= Titre de la spécification
+= Spécification FPSOT sur la gestion des versions
 :translation-status: pending
 
-Remplacez cette page par le texte normatif de la spécification.
-Commencez par la portée, puis les classes de conformité, puis les exigences.
+Cette spécification fixe les règles de gestion des versions des projets FPSOT.
+Elle comporte deux parties.
+
+* Les xref:generic.adoc[règles générales] s’appliquent à tout système de gestion des versions.
+* Les xref:git.adoc[règles Git] s’appliquent aux dépôts Git et complètent les règles générales.
 
 == Conformité
 
 Les mots clés en majuscules suivent le sens défini dans BCP 14 (RFC 2119, RFC 8174).
-En français, DOIT correspond à MUST et NE DOIT PAS à MUST NOT.
+DOIT correspond à MUST et NE DOIT PAS à MUST NOT.
 DEVRAIT correspond à SHOULD et NE DEVRAIT PAS à SHOULD NOT.
 PEUT correspond à MAY.
 
-== Exigences
-
-Donnez à chaque exigence une ancre avec son identifiant, juste au-dessus de son paragraphe.
-L'ancre ressemble à `+[[XYZ-001]]+`.
+Un dépôt est conforme à la partie générale s’il respecte toutes les règles DOIT de cette partie.
+Un dépôt Git est conforme à cette spécification s’il respecte toutes les règles DOIT des deux parties.

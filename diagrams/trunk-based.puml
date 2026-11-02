@@ -1,0 +1,13 @@
+@startuml
+title Trunk-based development with squash merges
+participant "feat/search" as F
+participant "main" as M
+participant "release/1.x" as R
+M -> F : create work branch
+F -> F : signed commits
+F -> M : squash merge, one signed commit
+M -> M : signed tag v1.0.0
+M -> M : signed tag v2.0.0
+M -> R : branch from v1.0.0 when 1.x needs fixes
+R -> R : fix and signed tag v1.0.1
+@enduml

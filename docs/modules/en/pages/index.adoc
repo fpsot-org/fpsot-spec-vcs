@@ -1,3 +1,58 @@
-= Guide
+= Set up signed commits and branches
 
-This page explains the specification for the people who adopt it.
+This guide shows how to meet the version control rules with Git and GitHub.
+
+== Sign commits with your SSH key
+
+Tell Git to sign every commit and tag with your SSH key:
+
+[source,shell]
+----
+git config --global gpg.format ssh
+git config --global user.signingkey ~/.ssh/id_ed25519.pub
+git config --global commit.gpgsign true
+git config --global tag.gpgsign true
+----
+
+Then add the same public key to GitHub as a signing key, under Settings, SSH and GPG keys.
+Make a commit, push it, and check that GitHub shows it as verified.
+
+== Keep your email address private
+
+In GitHub, open Settings, Emails.
+Turn on "Keep my email addresses private".
+Then set Git to use the no-reply address that page shows:
+
+[source,shell]
+----
+git config --global user.email ID+USERNAME@users.noreply.github.com
+----
+
+== Name a branch
+
+Start each branch name with the type of change.
+Examples: `feat/registry-search`, `fix/broken-link`, `docs/signing-guide`.
+
+== Merge and release
+
+Give each pull request a Conventional Commits title, such as `feat: add registry search`.
+Merge it with the squash button.
+To release, tag `main` with a signed tag:
+
+[source,shell]
+----
+git tag -s v1.2.0 -m "v1.2.0"
+git push origin v1.2.0
+----
+
+== Apply the rules to a repository
+
+Run `rules/apply-github.sh OWNER/REPO` with an account that administers the repository.
+It creates the `fpsot-vcs` ruleset and allows only squash merges.
+
+== Branch model
+
+The diagram `diagrams/trunk-based.svg` shows the branch model.
+Work branches start from `main` and come back as one squash commit each.
+Each release is a signed tag on `main`.
+A `release/1.x` branch starts from the `v1.0.0` tag only when version 1 needs fixes after version 2 ships.

@@ -1,0 +1,62 @@
+= Git rules
+
+These rules apply to Git repositories.
+They build on the xref:generic.adoc[generic rules].
+
+== Branches
+
+[[VCS-101]]
+*VCS-101.* The `main` branch MUST always be releasable.
+Projects MUST use trunk-based development and MUST NOT use Git flow.
+One long-lived branch keeps history simple.
+Git flow relies on merge commits, which do not mix with squash merges.
+
+[[VCS-102]]
+*VCS-102.* A work branch MUST have a name of the form `<type>/<short-description>`.
+The type MUST be a Conventional Commits type, such as `feat`, `fix` or `docs`.
+The name tells reviewers what kind of change to expect.
+
+[[VCS-103]]
+*VCS-103.* A work branch SHOULD merge or close within days, not weeks.
+Short branches cause fewer conflicts.
+
+== Merging
+
+[[VCS-104]]
+*VCS-104.* Maintainers MUST squash-merge pull requests.
+The repository MUST disable merge commits and rebase merging.
+Each pull request then becomes one signed commit on `main`.
+GitHub cannot sign the commits it rewrites in a rebase merge.
+
+[[VCS-105]]
+*VCS-105.* A pull request title MUST follow Conventional Commits 1.0.0.
+The title becomes the message of the squash commit.
+
+== Releases
+
+[[VCS-106]]
+*VCS-106.* A release MUST be a signed, annotated tag named `vX.Y.Z`.
+The version MUST follow link:https://semver.org/spec/v2.0.0.html[Semantic Versioning 2.0.0].
+Anyone can then check who published the release and what it contains.
+
+[[VCS-107]]
+*VCS-107.* A project MAY create a `release/N.x` branch only while major version N still needs fixes.
+Most projects support only their latest major version.
+A release branch adds work, so it exists only when users need it.
+
+== Signing keys
+
+[[VCS-108]]
+*VCS-108.* Authors SHOULD sign with an SSH key.
+Projects MAY also accept GPG keys and Sigstore gitsign.
+Git and GitHub support SSH signing with the key most developers already have.
+
+== Branch protection
+
+[[VCS-109]]
+*VCS-109.* The `main` and `release/*` branches MUST require a pull request and signed commits.
+Every change then gets a review step and a known author.
+
+[[VCS-110]]
+*VCS-110.* The repository MUST block force-pushes to `main` and `release/*`, and MUST stop anyone from deleting them.
+Released history then stays as the project published it.

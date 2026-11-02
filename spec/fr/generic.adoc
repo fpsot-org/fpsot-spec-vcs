@@ -1,0 +1,38 @@
+= Règles générales
+:translation-status: pending
+
+Ces règles s’appliquent à tout système de gestion des versions.
+Elles portent sur les commits, leurs messages et l’identité des auteurs.
+
+== Commits signés
+
+[[VCS-001]]
+*VCS-001.* L’auteur DOIT signer chaque commit avec une clé cryptographique.
+La signature prouve qui a fait la modification.
+Personne ne peut alors ajouter un commit au nom d’une autre personne.
+
+[[VCS-002]]
+*VCS-002.* Une branche protégée DOIT refuser les commits non signés.
+La règle de signature ne tient que si le serveur l’applique.
+
+== Messages de commit
+
+[[VCS-003]]
+*VCS-003.* Chaque message de commit DOIT suivre link:https://www.conventionalcommits.org/fr/v1.0.0/[Conventional Commits 1.0.0].
+Les outils lisent le type de chaque modification.
+Ils produisent ensuite le journal des modifications et choisissent le numéro de la prochaine version.
+
+[[VCS-004]]
+*VCS-004.* Un commit DEVRAIT contenir une seule modification logique.
+Une personne qui révise peut alors lire, tester et annuler chaque modification séparément.
+
+[[VCS-005]]
+*VCS-005.* Un commit DEVRAIT mentionner son ticket quand il en existe un.
+Le ticket explique la raison de la modification.
+
+== Identité
+
+[[VCS-006]]
+*VCS-006.* Les personnes qui contribuent DEVRAIENT utiliser une adresse courriel sans réponse.
+L’historique des commits est public et permanent.
+Une adresse personnelle y attire le pourriel et expose la personne.

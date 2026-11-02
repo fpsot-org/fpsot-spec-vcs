@@ -1,7 +1,10 @@
-= Specification title
+= FPSOT version control specification
 
-Replace this page with the normative text of the specification.
-Start with the scope, then the conformance classes, then the requirements.
+This specification sets the rules for version control in FPSOT projects.
+It has two parts.
+
+* xref:generic.adoc[Generic rules] apply to any version control system.
+* xref:git.adoc[Git rules] apply to Git repositories and build on the generic rules.
 
 == Conformance
 
@@ -10,7 +13,5 @@ ____
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in BCP 14 (RFC 2119, RFC 8174) when, and only when, they appear in all capitals, as shown here.
 ____
 
-== Requirements
-
-Give each requirement an anchor line with its ID, directly above its paragraph.
-The anchor looks like `+[[XYZ-001]]+`.
+A repository conforms to the generic part when it meets every MUST rule in that part.
+A Git repository conforms to this specification when it meets every MUST rule in both parts.

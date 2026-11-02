@@ -1,5 +1,9 @@
 # Scope
 
-[Include a detailed description of this Working Group’s Scope.  This Scope is important is it establishes the bounds of each contributor's and licensee's patent commitment. For guidance on drafting an appropriate Scope, you may find [ISO's guidance (see page 5)](https://www.iso.org/files/live/sites/isoorg/files/developing_standards/docs/en/how-to-write-standards.pdf "ISO How To Write Standards Guide") helpful.]
+This Working Group develops the FPSOT version control specification.
+
+The specification covers how contributors and maintainers use version control systems in FPSOT projects: signing commits, writing commit messages, naming and protecting branches, merging changes, and tagging releases. It includes a part for any version control system and a part for Git, and the machine-readable repository settings that enforce those rules.
+
+It does not cover the content of the software or specifications kept in those repositories.
 
 Any changes of Scope are not retroactive.

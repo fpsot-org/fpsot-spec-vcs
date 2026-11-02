@@ -1,4 +1,59 @@
-= Guide
+= Configurer les commits signés et les branches
 :translation-status: pending
 
-Cette page explique la spécification aux personnes qui l’adoptent.
+Ce guide montre comment respecter les règles de gestion des versions avec Git et GitHub.
+
+== Signer les commits avec votre clé SSH
+
+Demandez à Git de signer chaque commit et chaque étiquette avec votre clé SSH :
+
+[source,shell]
+----
+git config --global gpg.format ssh
+git config --global user.signingkey ~/.ssh/id_ed25519.pub
+git config --global commit.gpgsign true
+git config --global tag.gpgsign true
+----
+
+Ajoutez ensuite la même clé publique à GitHub comme clé de signature, sous Settings, SSH and GPG keys.
+Faites un commit, poussez-le et vérifiez que GitHub l’affiche comme vérifié.
+
+== Garder votre adresse courriel privée
+
+Dans GitHub, ouvrez Settings, Emails.
+Activez « Keep my email addresses private ».
+Configurez ensuite Git avec l’adresse sans réponse affichée sur cette page :
+
+[source,shell]
+----
+git config --global user.email ID+USERNAME@users.noreply.github.com
+----
+
+== Nommer une branche
+
+Commencez chaque nom de branche par le type de modification.
+Exemples : `feat/registry-search`, `fix/broken-link`, `docs/signing-guide`.
+
+== Fusionner et publier une version
+
+Donnez à chaque demande de tirage un titre Conventional Commits, comme `feat: add registry search`.
+Fusionnez-la avec le bouton d’écrasement.
+Pour publier une version, posez une étiquette signée sur `main` :
+
+[source,shell]
+----
+git tag -s v1.2.0 -m "v1.2.0"
+git push origin v1.2.0
+----
+
+== Appliquer les règles à un dépôt
+
+Lancez `rules/apply-github.sh OWNER/REPO` avec un compte qui administre le dépôt.
+Le script crée l’ensemble de règles `fpsot-vcs` et n’autorise que la fusion par écrasement.
+
+== Modèle de branches
+
+Le diagramme `diagrams/trunk-based.svg` montre le modèle de branches.
+Les branches de travail partent de `main` et y reviennent en un seul commit écrasé.
+Chaque version est une étiquette signée sur `main`.
+Une branche `release/1.x` part de l’étiquette `v1.0.0` seulement si la version 1 a encore besoin de correctifs.

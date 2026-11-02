@@ -1,0 +1,62 @@
+= Règles Git
+:translation-status: pending
+
+Ces règles s’appliquent aux dépôts Git.
+Elles complètent les xref:generic.adoc[règles générales].
+
+== Branches
+
+[[VCS-101]]
+*VCS-101.* La branche `main` DOIT toujours être prête pour une version.
+Les projets DOIVENT travailler sur un tronc commun et NE DOIVENT PAS utiliser Git flow.
+Une seule branche durable garde un historique simple.
+Git flow repose sur des commits de fusion, incompatibles avec la fusion par écrasement.
+
+[[VCS-102]]
+*VCS-102.* Le nom d’une branche de travail DOIT avoir la forme `<type>/<description-courte>`.
+Le type DOIT être un type Conventional Commits, comme `feat`, `fix` ou `docs`.
+Le nom indique aux personnes qui révisent le genre de modification à attendre.
+
+[[VCS-103]]
+*VCS-103.* Une branche de travail DEVRAIT être fusionnée ou fermée en quelques jours.
+Les branches courtes causent moins de conflits.
+
+== Fusion
+
+[[VCS-104]]
+*VCS-104.* Les responsables DOIVENT fusionner les demandes de tirage par écrasement.
+Le dépôt DOIT désactiver les commits de fusion et la fusion par rebasage.
+Chaque demande de tirage devient alors un seul commit signé sur `main`.
+GitHub ne peut pas signer les commits qu’il réécrit lors d’un rebasage.
+
+[[VCS-105]]
+*VCS-105.* Le titre d’une demande de tirage DOIT suivre Conventional Commits 1.0.0.
+Le titre devient le message du commit écrasé.
+
+== Versions
+
+[[VCS-106]]
+*VCS-106.* Une version DOIT être une étiquette annotée et signée nommée `vX.Y.Z`.
+Le numéro DOIT suivre link:https://semver.org/lang/fr/spec/v2.0.0.html[Semantic Versioning 2.0.0].
+Tout le monde peut alors vérifier qui a publié la version et ce qu’elle contient.
+
+[[VCS-107]]
+*VCS-107.* Un projet PEUT créer une branche `release/N.x` seulement tant que la version majeure N a besoin de correctifs.
+La plupart des projets ne maintiennent que leur dernière version majeure.
+
+== Clés de signature
+
+[[VCS-108]]
+*VCS-108.* Les auteurs DEVRAIENT signer avec une clé SSH.
+Les projets PEUVENT aussi accepter les clés GPG et Sigstore gitsign.
+Git et GitHub acceptent la signature SSH avec la clé que la plupart des personnes ont déjà.
+
+== Protection des branches
+
+[[VCS-109]]
+*VCS-109.* Les branches `main` et `release/*` DOIVENT exiger une demande de tirage et des commits signés.
+Chaque modification passe alors par une révision et a un auteur connu.
+
+[[VCS-110]]
+*VCS-110.* Le dépôt DOIT bloquer les poussées forcées sur `main` et `release/*`, et DOIT empêcher leur suppression.
+L’historique publié reste alors tel que le projet l’a publié.
