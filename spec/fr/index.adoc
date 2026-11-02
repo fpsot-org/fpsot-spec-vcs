@@ -1,5 +1,4 @@
 = Spécification FPSOT sur la gestion des versions
-:translation-status: pending
 
 Cette spécification fixe les règles de gestion des versions des projets FPSOT.
 Elle comporte deux parties.

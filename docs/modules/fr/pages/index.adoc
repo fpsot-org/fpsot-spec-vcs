@@ -1,5 +1,4 @@
 = Configurer les commits signés et les branches
-:translation-status: pending
 
 Ce guide montre comment respecter les règles de gestion des versions avec Git et GitHub.
 
