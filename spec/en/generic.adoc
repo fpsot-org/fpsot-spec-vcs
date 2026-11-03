@@ -1,4 +1,5 @@
 = Generic rules
+include::_fpsot-terms.adoc[]
 
 These rules apply to any version control system.
 They cover commits, commit messages and identity.
@@ -6,13 +7,13 @@ They cover commits, commit messages and identity.
 == Signed commits
 
 [[VCS-001]]
-*VCS-001.* The author MUST sign every commit with a cryptographic key.
+*VCS-001.* The author MUST sign every {term-commit} with a cryptographic key.
 A signature proves who made each commit in a pull request.
 Nobody can then add a commit in someone else's name.
 After a squash merge, GitHub signs the single commit on `main` with its own key.
 
 [[VCS-002]]
-*VCS-002.* The repository MUST reject unsigned commits on protected branches and in pull requests.
+*VCS-002.* The {term-repository} MUST reject unsigned commits on protected branches and in pull requests.
 The signing rule only holds when the server enforces it.
 
 == Commit messages
@@ -36,3 +37,13 @@ The issue holds the reason for the change.
 *VCS-006.* Contributors SHOULD commit with a no-reply email address.
 Commit history is public and permanent.
 A personal address in it invites spam and exposes the person.
+
+== Document history
+
+[cols="1,1,4",options="header"]
+|===
+|Version |Date |Change
+|0.1.0 |2026-11-01 |First version.
+|0.1.1 |2026-11-01 |VCS-001: the rationale matches squash merges. VCS-002: pull requests also reject unsigned commits.
+|0.2.0 |2026-11-03 |Abbreviations and defined terms link to the glossary. No rule changes.
+|===

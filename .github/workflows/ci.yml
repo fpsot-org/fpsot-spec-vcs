@@ -25,6 +25,7 @@ jobs:
     uses: fpsot-org/GitHub-Actions/.github/workflows/spec-check.yml@v0
     with:
       prefix: ${{ needs.prefix.outputs.value }}
+      doc-rules: true
   diagrams:
     if: github.ref_type != 'tag'
     uses: fpsot-org/GitHub-Actions/.github/workflows/diagrams.yml@v0
@@ -43,8 +44,11 @@ jobs:
     if: github.ref_type == 'tag'
     needs: prefix
     uses: fpsot-org/GitHub-Actions/.github/workflows/spec-release.yml@v0
+    permissions:
+      contents: write
     with:
       prefix: ${{ needs.prefix.outputs.value }}
+      doc-rules: true
   rules-test:
     if: github.ref_type != 'tag'
     runs-on: ubuntu-latest

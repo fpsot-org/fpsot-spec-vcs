@@ -1,10 +1,12 @@
 = Set up signed commits and branches
+:page-type: how-to
+include::_fpsot-terms.adoc[]
 
 This guide shows how to meet the version control rules with Git and GitHub.
 
 == Sign commits with your SSH key
 
-Tell Git to sign every commit and tag with your SSH key:
+Tell Git to sign every {term-commit} and tag with your {abbr-ssh-first} key:
 
 [source,shell]
 ----
@@ -56,3 +58,12 @@ The diagram `diagrams/trunk-based.svg` shows the branch model.
 Work branches start from `main` and come back as one squash commit each.
 Each release is a signed tag on `main`.
 A `release/1.x` branch starts from the `v1.0.0` tag only when version 1 needs fixes after version 2 ships.
+
+== Document history
+
+[cols="1,1,4",options="header"]
+|===
+|Version |Date |Change
+|0.1.0 |2026-11-01 |First version.
+|0.2.0 |2026-11-03 |Page type, and abbreviations linked to the glossary.
+|===

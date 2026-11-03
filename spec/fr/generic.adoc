@@ -1,4 +1,5 @@
 = Règles générales
+include::_fpsot-terms.adoc[]
 
 Ces règles s’appliquent à tout système de gestion des versions.
 Elles portent sur les commits, leurs messages et l’identité des auteurs.
@@ -12,7 +13,7 @@ Personne ne peut alors ajouter un commit au nom d’une autre personne.
 Après une fusion par écrasement, GitHub signe le commit unique sur `main` avec sa propre clé.
 
 [[VCS-002]]
-*VCS-002.* Le dépôt DOIT refuser les commits non signés sur les branches protégées et dans les demandes de tirage.
+*VCS-002.* Le {term-repository} DOIT refuser les commits non signés sur les branches protégées et dans les demandes de tirage.
 La règle de signature ne tient que si le serveur l’applique.
 
 == Messages de commit
@@ -36,3 +37,13 @@ Le ticket explique la raison de la modification.
 *VCS-006.* Les personnes qui contribuent DEVRAIENT utiliser une adresse courriel sans réponse.
 L’historique des commits est public et permanent.
 Une adresse personnelle y attire le pourriel et expose la personne.
+
+== Historique du document
+
+[cols="1,1,4",options="header"]
+|===
+|Version |Date |Changement
+|0.1.0 |2026-11-01 |Première version.
+|0.1.1 |2026-11-01 |VCS-001 : la justification tient compte de la fusion par écrasement. VCS-002 : les demandes de tirage refusent aussi les commits non signés.
+|0.2.0 |2026-11-03 |Les abréviations et les termes définis renvoient au glossaire. Aucune règle ne change.
+|===
