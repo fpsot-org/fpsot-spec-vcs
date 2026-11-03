@@ -1,4 +1,5 @@
 = Git rules
+include::_fpsot-terms.adoc[]
 
 These rules apply to Git repositories.
 They build on the xref:generic.adoc[generic rules].
@@ -6,7 +7,7 @@ They build on the xref:generic.adoc[generic rules].
 == Branches
 
 [[VCS-101]]
-*VCS-101.* The `main` branch MUST always be releasable.
+*VCS-101.* The `main` {term-branch} MUST always be releasable.
 Projects MUST use trunk-based development and MUST NOT use Git flow.
 One long-lived branch keeps history simple.
 Git flow relies on merge commits, which do not mix with squash merges.
@@ -24,8 +25,8 @@ Short branches cause fewer conflicts.
 
 [[VCS-104]]
 *VCS-104.* Maintainers MUST squash-merge pull requests.
-The repository MUST disable merge commits and rebase merging.
-Each pull request then becomes one signed commit on `main`.
+The {term-repository} MUST disable merge commits and rebase merging.
+Each pull request then becomes one signed {term-commit} on `main`.
 GitHub cannot sign the commits it rewrites in a rebase merge.
 
 [[VCS-105]]
@@ -49,10 +50,10 @@ A release branch adds work, so it exists only when users need it.
 == Signing keys
 
 [[VCS-108]]
-*VCS-108.* Authors SHOULD sign with an SSH key.
-Projects MAY also accept GPG keys.
+*VCS-108.* Authors SHOULD sign with a {abbr-ssh-first} key.
+Projects MAY also accept {abbr-gpg-first} keys.
 GitHub does not verify Sigstore gitsign signatures, so the checks reject them.
-Git and GitHub support SSH signing with the key most developers already have.
+Git and GitHub support {abbr-ssh} signing with the key most developers already have.
 
 == Branch protection
 
@@ -63,3 +64,13 @@ Every change then gets a review step and a known author.
 [[VCS-110]]
 *VCS-110.* The repository MUST block force-pushes to `main` and `release/*`, and MUST stop anyone from deleting them.
 Released history then stays as the project published it.
+
+== Document history
+
+[cols="1,1,4",options="header"]
+|===
+|Version |Date |Change
+|0.1.0 |2026-11-01 |First version.
+|0.1.1 |2026-11-01 |VCS-107: a release branch starts only after the next major version ships. VCS-108: Sigstore gitsign is no longer listed.
+|0.2.0 |2026-11-03 |Abbreviations and defined terms link to the glossary. No rule changes.
+|===

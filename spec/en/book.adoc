@@ -1,0 +1,11 @@
+= FPSOT version control specification
+:doctype: book
+:toc:
+
+include::index.adoc[leveloffset=+1]
+
+include::generic.adoc[leveloffset=+1]
+
+include::git.adoc[leveloffset=+1]
+
+include::glossary.adoc[leveloffset=+1]

@@ -4,8 +4,6 @@
 
 Contact for Code of Conduct issues or inquires: the maintainer listed in `.github/CODEOWNERS` (GitHub @jnbdz). A second contact is added when the FPSOT leads join.
 
-[Ideally list two different individuals above (not a generic mailing list) as someone submitting a Code of Conduct complaint will want to know exactly who is receiving the complaint. We recommend two individuals in the case one of the individuals is the subject of or directly involved in the subject of a complaint.]
-
 
 ## License Acceptance
 

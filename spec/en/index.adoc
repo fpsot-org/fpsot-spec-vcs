@@ -1,6 +1,7 @@
 = FPSOT version control specification
+include::_fpsot-terms.adoc[]
 
-This specification sets the rules for version control in FPSOT projects.
+This specification sets the rules for version control in {abbr-fpsot-first} projects.
 It has two parts.
 
 * xref:generic.adoc[Generic rules] apply to any version control system.
@@ -13,5 +14,17 @@ ____
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in BCP 14 (RFC 2119, RFC 8174) when, and only when, they appear in all capitals, as shown here.
 ____
 
-A repository conforms to the generic part when it meets every MUST rule in that part.
+The keywords follow requirement WRT-010 of the {abbr-fpsot} writing specification.
+The French version uses the French keywords of WRT-011.
+
+A {term-repository} conforms to the generic part when it meets every MUST rule in that part.
 A Git repository conforms to this specification when it meets every MUST rule in both parts.
+
+== Document history
+
+[cols="1,1,4",options="header"]
+|===
+|Version |Date |Change
+|0.1.0 |2026-11-01 |First version.
+|0.2.0 |2026-11-03 |Conformance cites WRT-010 and WRT-011 of the writing specification. Abbreviations link to the glossary. No rule changes.
+|===

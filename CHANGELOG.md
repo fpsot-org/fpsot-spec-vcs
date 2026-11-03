@@ -6,6 +6,24 @@ and versions follow [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.h
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-11-03
+
+No requirement changes meaning.
+
+### Added
+
+- A book per language, published as PDF with each release, ending with a glossary.
+- A document history at the end of each page.
+- `AGENTS.md`.
+- Comparison data for four topics: signed commits, commit messages, release versions and branch protection, with one Canada row on signed commits.
+
+### Changed
+
+- Conformance cites WRT-010 and WRT-011 of the FPSOT writing specification. The French page now quotes the RFC 8174 text.
+- Abbreviations and defined terms link to the glossary.
+- The guide has the page type how-to.
+- `NOTICE` spells out FPSOT. `NOTICES.md` drops the template instruction.
+
 ## [0.1.1] - 2026-11-01
 
 ### Fixed
@@ -26,6 +44,7 @@ and versions follow [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.h
 - Guide on signing, email privacy, branch names and releases.
 - French text reviewed by the project lead.
 
-[Unreleased]: https://github.com/fpsot-org/fpsot-spec-vcs/compare/v0.1.1...HEAD
+[Unreleased]: https://github.com/fpsot-org/fpsot-spec-vcs/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/fpsot-org/fpsot-spec-vcs/compare/v0.1.1...v0.2.0
 [0.1.1]: https://github.com/fpsot-org/fpsot-spec-vcs/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/fpsot-org/fpsot-spec-vcs/releases/tag/v0.1.0

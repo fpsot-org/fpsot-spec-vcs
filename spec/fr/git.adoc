@@ -1,4 +1,5 @@
 = Règles Git
+include::_fpsot-terms.adoc[]
 
 Ces règles s’appliquent aux dépôts Git.
 Elles complètent les xref:generic.adoc[règles générales].
@@ -6,7 +7,7 @@ Elles complètent les xref:generic.adoc[règles générales].
 == Branches
 
 [[VCS-101]]
-*VCS-101.* La branche `main` DOIT toujours être prête pour une version.
+*VCS-101.* La {term-branch} `main` DOIT toujours être prête pour une version.
 Les projets DOIVENT travailler sur un tronc commun et NE DOIVENT PAS utiliser Git flow.
 Une seule branche durable garde un historique simple.
 Git flow repose sur des commits de fusion, incompatibles avec la fusion par écrasement.
@@ -24,7 +25,7 @@ Les branches courtes causent moins de conflits.
 
 [[VCS-104]]
 *VCS-104.* Les responsables DOIVENT fusionner les demandes de tirage par écrasement.
-Le dépôt DOIT désactiver les commits de fusion et la fusion par rebasage.
+Le {term-repository} DOIT désactiver les commits de fusion et la fusion par rebasage.
 Chaque demande de tirage devient alors un seul commit signé sur `main`.
 GitHub ne peut pas signer les commits qu’il réécrit lors d’un rebasage.
 
@@ -48,10 +49,10 @@ La plupart des projets ne maintiennent que leur dernière version majeure.
 == Clés de signature
 
 [[VCS-108]]
-*VCS-108.* Les auteurs DEVRAIENT signer avec une clé SSH.
-Les projets PEUVENT aussi accepter les clés GPG.
+*VCS-108.* Les auteurs DEVRAIENT signer avec une clé du {abbr-ssh-first}.
+Les projets PEUVENT aussi accepter les clés {abbr-gpg-first}.
 GitHub ne vérifie pas les signatures Sigstore gitsign, donc les vérifications les refusent.
-Git et GitHub acceptent la signature SSH avec la clé que la plupart des personnes ont déjà.
+Git et GitHub acceptent la signature {abbr-ssh} avec la clé que la plupart des personnes ont déjà.
 
 == Protection des branches
 
@@ -62,3 +63,13 @@ Chaque modification passe alors par une révision et a un auteur connu.
 [[VCS-110]]
 *VCS-110.* Le dépôt DOIT bloquer les poussées forcées sur `main` et `release/*`, et DOIT empêcher leur suppression.
 L’historique publié reste alors tel que le projet l’a publié.
+
+== Historique du document
+
+[cols="1,1,4",options="header"]
+|===
+|Version |Date |Changement
+|0.1.0 |2026-11-01 |Première version.
+|0.1.1 |2026-11-01 |VCS-107 : une branche de version n’est créée qu’après la sortie de la version majeure suivante. VCS-108 : Sigstore gitsign n’est plus mentionné.
+|0.2.0 |2026-11-03 |Les abréviations et les termes définis renvoient au glossaire. Aucune règle ne change.
+|===

@@ -1,10 +1,12 @@
 = Configurer les commits signés et les branches
+:page-type: how-to
+include::_fpsot-terms.adoc[]
 
 Ce guide montre comment respecter les règles de gestion des versions avec Git et GitHub.
 
 == Signer les commits avec votre clé SSH
 
-Demandez à Git de signer chaque commit et chaque étiquette avec votre clé SSH :
+Demandez à Git de signer chaque commit et chaque étiquette avec votre clé du {abbr-ssh-first} :
 
 [source,shell]
 ----
@@ -56,3 +58,12 @@ Le diagramme `diagrams/trunk-based.svg` montre le modèle de branches.
 Les branches de travail partent de `main` et y reviennent en un seul commit écrasé.
 Chaque version est une étiquette signée sur `main`.
 Une branche `release/1.x` part de l’étiquette `v1.0.0` seulement si la version 1 a encore besoin de correctifs.
+
+== Historique du document
+
+[cols="1,1,4",options="header"]
+|===
+|Version |Date |Changement
+|0.1.0 |2026-11-01 |Première version.
+|0.2.0 |2026-11-03 |Type de page, et abréviations liées au glossaire.
+|===

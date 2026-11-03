@@ -1,7 +1,7 @@
 = FPSOT version control specification
 
 Rules for version control in FPSOT projects: signed commits, commit messages, branches, merging and releases.
-Version 0.1 is a draft.
+Version 0.2 is a draft.
 
 == Implement this spec
 
@@ -22,7 +22,7 @@ To apply the rules to a GitHub repository, run `rules/apply-github.sh OWNER/REPO
 | Folder | Content
 
 | `spec/`
-| Normative text, in English and French.
+| Normative text, in English and French. `book.adoc` joins the pages into one book, published as PDF with each release.
 
 | `docs/`
 | Guides, in the Antora folder layout.
@@ -35,6 +35,9 @@ To apply the rules to a GitHub repository, run `rules/apply-github.sh OWNER/REPO
 
 | `diagrams/`
 | The branch model, as PlantUML source and SVG.
+
+| `jurisdictions/`
+| Comparison data: how each government handles the same topics.
 |===
 
 == Licence

@@ -1,6 +1,7 @@
 = Spécification FPSOT sur la gestion des versions
+include::_fpsot-terms.adoc[]
 
-Cette spécification fixe les règles de gestion des versions des projets FPSOT.
+Cette spécification fixe les règles de gestion des versions des projets de la {abbr-fpsot-first}.
 Elle comporte deux parties.
 
 * Les xref:generic.adoc[règles générales] s’appliquent à tout système de gestion des versions.
@@ -8,10 +9,22 @@ Elle comporte deux parties.
 
 == Conformité
 
-Les mots clés en majuscules suivent le sens défini dans BCP 14 (RFC 2119, RFC 8174).
-DOIT correspond à MUST et NE DOIT PAS à MUST NOT.
-DEVRAIT correspond à SHOULD et NE DEVRAIT PAS à SHOULD NOT.
-PEUT correspond à MAY.
+[quote, RFC 8174]
+____
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in BCP 14 (RFC 2119, RFC 8174) when, and only when, they appear in all capitals, as shown here.
+____
 
-Un dépôt est conforme à la partie générale s’il respecte toutes les règles DOIT de cette partie.
+Les mots clés suivent l’exigence WRT-010 de la spécification de rédaction de {abbr-fpsot}.
+La version française emploie les mots clés français de l’exigence WRT-011.
+
+Un {term-repository} est conforme à la partie générale s’il respecte toutes les règles DOIT de cette partie.
 Un dépôt Git est conforme à cette spécification s’il respecte toutes les règles DOIT des deux parties.
+
+== Historique du document
+
+[cols="1,1,4",options="header"]
+|===
+|Version |Date |Changement
+|0.1.0 |2026-11-01 |Première version.
+|0.2.0 |2026-11-03 |La conformité cite le texte du RFC 8174 et les exigences WRT-010 et WRT-011 de la spécification de rédaction. Les abréviations renvoient au glossaire. Aucune règle ne change.
+|===
