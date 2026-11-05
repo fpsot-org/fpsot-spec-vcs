@@ -6,6 +6,17 @@ and versions follow [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.h
 
 ## [Unreleased]
 
+## [0.2.1] - 2026-11-04
+
+No rule changes.
+
+### Changed
+
+- Each page links the outside standards it names, including RFC 2119 and RFC 8174 in the conformance text.
+- Each page that cites outside sources ends with a References section, with an archived copy of each source.
+- English text uses US spelling. The README heading is now "License".
+- `.fpsot-checks` turns on the references and US spelling checks in CI.
+
 ## [0.2.0] - 2026-11-03
 
 No requirement changes meaning.
@@ -44,7 +55,8 @@ No requirement changes meaning.
 - Guide on signing, email privacy, branch names and releases.
 - French text reviewed by the project lead.
 
-[Unreleased]: https://github.com/fpsot-org/fpsot-spec-vcs/compare/v0.2.0...HEAD
+[Unreleased]: https://github.com/fpsot-org/fpsot-spec-vcs/compare/v0.2.1...HEAD
+[0.2.1]: https://github.com/fpsot-org/fpsot-spec-vcs/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/fpsot-org/fpsot-spec-vcs/compare/v0.1.1...v0.2.0
 [0.1.1]: https://github.com/fpsot-org/fpsot-spec-vcs/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/fpsot-org/fpsot-spec-vcs/releases/tag/v0.1.0

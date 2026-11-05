@@ -9,9 +9,9 @@ Elle comporte deux parties.
 
 == Conformité
 
-[quote, RFC 8174]
+[quote, 'link:https://www.rfc-editor.org/info/rfc8174[RFC 8174]']
 ____
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in BCP 14 (RFC 2119, RFC 8174) when, and only when, they appear in all capitals, as shown here.
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in BCP 14 (link:https://www.rfc-editor.org/info/rfc2119[RFC 2119], link:https://www.rfc-editor.org/info/rfc8174[RFC 8174]) when, and only when, they appear in all capitals, as shown here.
 ____
 
 Les mots clés suivent l’exigence WRT-010 de la spécification de rédaction de {abbr-fpsot}.
@@ -20,6 +20,13 @@ La version française emploie les mots clés français de l’exigence WRT-011.
 Un {term-repository} est conforme à la partie générale s’il respecte toutes les règles DOIT de cette partie.
 Un dépôt Git est conforme à cette spécification s’il respecte toutes les règles DOIT des deux parties.
 
+== Références
+
+=== Références normatives
+
+* link:https://www.rfc-editor.org/info/rfc2119[RFC 2119, Key words for use in RFCs to Indicate Requirement Levels], IETF, BCP 14, 1997-03. link:https://web.archive.org/web/20261103005705/https://www.rfc-editor.org/info/rfc2119/[Copie archivée]
+* link:https://www.rfc-editor.org/info/rfc8174[RFC 8174, Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words], IETF, BCP 14, 2017-05. link:https://web.archive.org/web/20261103005743/https://www.rfc-editor.org/info/rfc8174[Copie archivée]
+
 == Historique du document
 
 [cols="1,1,4",options="header"]
@@ -27,4 +34,5 @@ Un dépôt Git est conforme à cette spécification s’il respecte toutes les r
 |Version |Date |Changement
 |0.1.0 |2026-11-01 |Première version.
 |0.2.0 |2026-11-03 |La conformité cite le texte du RFC 8174 et les exigences WRT-010 et WRT-011 de la spécification de rédaction. Les abréviations renvoient au glossaire. Aucune règle ne change.
+|0.2.1 |2026-11-04 |Liens vers les normes externes et références ajoutées.
 |===

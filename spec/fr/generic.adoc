@@ -38,6 +38,12 @@ Le ticket explique la raison de la modification.
 L’historique des commits est public et permanent.
 Une adresse personnelle y attire le pourriel et expose la personne.
 
+== Références
+
+=== Références normatives
+
+* link:https://www.conventionalcommits.org/fr/v1.0.0/[Conventional Commits], conventionalcommits.org, 1.0.0. link:https://web.archive.org/web/20261019125741/https://www.conventionalcommits.org/fr/v1.0.0/[Copie archivée]
+
 == Historique du document
 
 [cols="1,1,4",options="header"]
@@ -46,4 +52,5 @@ Une adresse personnelle y attire le pourriel et expose la personne.
 |0.1.0 |2026-11-01 |Première version.
 |0.1.1 |2026-11-01 |VCS-001 : la justification tient compte de la fusion par écrasement. VCS-002 : les demandes de tirage refusent aussi les commits non signés.
 |0.2.0 |2026-11-03 |Les abréviations et les termes définis renvoient au glossaire. Aucune règle ne change.
+|0.2.1 |2026-11-04 |Liens vers les normes externes et références ajoutées.
 |===
