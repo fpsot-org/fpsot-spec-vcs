@@ -24,8 +24,8 @@ Un dépôt Git est conforme à cette spécification s’il respecte toutes les r
 
 === Références normatives
 
-* link:https://www.rfc-editor.org/info/rfc2119[RFC 2119, Key words for use in RFCs to Indicate Requirement Levels], {abbr-ietf-first}, {abbr-bcp-first} 14, 1997-03. link:https://web.archive.org/web/20261103005705/https://www.rfc-editor.org/info/rfc2119/[Copie archivée]
-* link:https://www.rfc-editor.org/info/rfc8174[RFC 8174, Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words], {abbr-ietf}, {abbr-bcp} 14, 2017-05. link:https://web.archive.org/web/20261103005743/https://www.rfc-editor.org/info/rfc8174[Copie archivée]
+* link:https://www.rfc-editor.org/info/rfc2119[RFC 2119, Key words for use in RFCs to Indicate Requirement Levels], IETF, BCP 14, 1997-03. link:https://web.archive.org/web/20261103005705/https://www.rfc-editor.org/info/rfc2119/[Copie archivée]
+* link:https://www.rfc-editor.org/info/rfc8174[RFC 8174, Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words], IETF, BCP 14, 2017-05. link:https://web.archive.org/web/20261103005743/https://www.rfc-editor.org/info/rfc8174[Copie archivée]
 
 == Historique du document
 
@@ -33,6 +33,6 @@ Un dépôt Git est conforme à cette spécification s’il respecte toutes les r
 |===
 |Version |Date |Changement
 |0.1.0 |2026-11-01 |Première version.
-|0.2.0 |2026-11-03 |La conformité cite le texte du link:https://www.rfc-editor.org/info/rfc8174[RFC 8174] et les exigences WRT-010 et WRT-011 de la spécification de rédaction. Les abréviations renvoient au glossaire. Aucune règle ne change.
+|0.2.0 |2026-11-03 |La conformité cite le texte du RFC 8174 et les exigences WRT-010 et WRT-011 de la spécification de rédaction. Les abréviations renvoient au glossaire. Aucune règle ne change.
 |0.2.1 |2026-11-04 |Liens vers les normes externes et références ajoutées.
 |===
