@@ -40,7 +40,7 @@ To apply the rules to a GitHub repository, run `rules/apply-github.sh OWNER/REPO
 | Comparison data: how each government handles the same topics.
 |===
 
-== Licence
+== License
 
 The specification is under the Community Specification License 1.0.
 Source code is under the Apache License 2.0.
