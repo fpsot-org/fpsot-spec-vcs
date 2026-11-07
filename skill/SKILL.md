@@ -13,7 +13,7 @@ The spec text in `spec/` wins on any difference. Each line cites its requirement
 - Sign every commit (VCS-001). Protected branches and pull request checks reject unsigned commits (VCS-002).
 - Write Conventional Commits messages: `type(scope): summary` (VCS-003).
 - One logical change per commit (VCS-004). Reference the issue when one exists (VCS-005).
-- Commit with a no-reply email address (VCS-006).
+- Contributors may commit with a no-reply email address; each one chooses (VCS-006).
 
 ## Branches and merging
 

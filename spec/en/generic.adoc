@@ -34,9 +34,10 @@ The issue holds the reason for the change.
 == Identity
 
 [[VCS-006]]
-*VCS-006.* Contributors SHOULD commit with a no-reply email address.
-Commit history is public and permanent.
-A personal address in it invites spam and exposes the person.
+*VCS-006.* Contributors MAY commit with a no-reply email address, such as the one their Git host provides.
+Commit history is public and permanent, so each person chooses whether their address appears in it.
+With a real address, others can reach the author about a change.
+A no-reply address keeps a personal address out of public view.
 
 == References
 
@@ -53,4 +54,5 @@ A personal address in it invites spam and exposes the person.
 |0.1.1 |2026-11-01 |VCS-001: the rationale matches squash merges. VCS-002: pull requests also reject unsigned commits.
 |0.2.0 |2026-11-03 |Abbreviations and defined terms link to the glossary. No rule changes.
 |0.2.1 |2026-11-04 |Linked outside standards and added references.
+|0.3.0 |2026-11-07 |VCS-006: a no-reply address is now optional (MAY). Each contributor chooses.
 |===
