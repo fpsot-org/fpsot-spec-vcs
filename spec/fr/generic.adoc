@@ -34,9 +34,10 @@ Le ticket explique la raison de la modification.
 == Identité
 
 [[VCS-006]]
-*VCS-006.* Les personnes qui contribuent DEVRAIENT utiliser une adresse courriel sans réponse.
-L’historique des commits est public et permanent.
-Une adresse personnelle y attire le pourriel et expose la personne.
+*VCS-006.* Les personnes qui contribuent PEUVENT utiliser une adresse courriel sans réponse, comme celle que fournit leur hébergeur Git.
+L’historique des commits est public et permanent : chaque personne choisit donc si son adresse y paraît.
+Une vraie adresse permet de joindre l’auteur ou l’autrice au sujet d’un changement.
+Une adresse sans réponse garde une adresse personnelle hors de la vue du public.
 
 == Références
 
@@ -53,4 +54,5 @@ Une adresse personnelle y attire le pourriel et expose la personne.
 |0.1.1 |2026-11-01 |VCS-001 : la justification tient compte de la fusion par écrasement. VCS-002 : les demandes de tirage refusent aussi les commits non signés.
 |0.2.0 |2026-11-03 |Les abréviations et les termes définis renvoient au glossaire. Aucune règle ne change.
 |0.2.1 |2026-11-04 |Liens vers les normes externes et références ajoutées.
+|0.3.0 |2026-11-07 |VCS-006 : l’adresse sans réponse est maintenant facultative (PEUT). Chaque personne choisit.
 |===

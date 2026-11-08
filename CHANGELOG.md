@@ -6,6 +6,12 @@ and versions follow [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.h
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-11-07
+
+### Changed
+
+- VCS-006: committing with a no-reply email address is now optional (MAY) instead of recommended (SHOULD). Each contributor chooses whether their address appears in the public history.
+
 ## [0.2.1] - 2026-11-04
 
 No rule changes.
