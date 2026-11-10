@@ -6,6 +6,14 @@ and versions follow [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.h
 
 ## [Unreleased]
 
+## [0.3.1] - 2026-11-09
+
+No rule changes.
+
+### Changed
+
+- French text: « demande de fusion » replaces « demande de tirage » for pull request, as in the term base and the other specifications. This covers VCS-002, VCS-104, VCS-105, VCS-109, the guide and the comparison data.
+
 ## [0.3.0] - 2026-11-07
 
 ### Changed
@@ -61,7 +69,9 @@ No requirement changes meaning.
 - Guide on signing, email privacy, branch names and releases.
 - French text reviewed by the project lead.
 
-[Unreleased]: https://github.com/fpsot-org/fpsot-spec-vcs/compare/v0.2.1...HEAD
+[Unreleased]: https://github.com/fpsot-org/fpsot-spec-vcs/compare/v0.3.1...HEAD
+[0.3.1]: https://github.com/fpsot-org/fpsot-spec-vcs/compare/v0.3.0...v0.3.1
+[0.3.0]: https://github.com/fpsot-org/fpsot-spec-vcs/compare/v0.2.1...v0.3.0
 [0.2.1]: https://github.com/fpsot-org/fpsot-spec-vcs/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/fpsot-org/fpsot-spec-vcs/compare/v0.1.1...v0.2.0
 [0.1.1]: https://github.com/fpsot-org/fpsot-spec-vcs/compare/v0.1.0...v0.1.1

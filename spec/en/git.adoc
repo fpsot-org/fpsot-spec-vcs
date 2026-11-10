@@ -81,4 +81,5 @@ Released history then stays as the project published it.
 |0.1.1 |2026-11-01 |VCS-107: a release branch starts only after the next major version ships. VCS-108: Sigstore gitsign is no longer listed.
 |0.2.0 |2026-11-03 |Abbreviations and defined terms link to the glossary. No rule changes.
 |0.2.1 |2026-11-04 |Linked outside standards and added references.
+|0.3.1 |2026-11-09 |French text only: « demande de fusion » replaces « demande de tirage » for pull request. No rule changes.
 |===
