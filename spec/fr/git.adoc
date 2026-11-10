@@ -24,13 +24,13 @@ Les branches courtes causent moins de conflits.
 == Fusion
 
 [[VCS-104]]
-*VCS-104.* Les responsables DOIVENT fusionner les demandes de tirage par écrasement.
+*VCS-104.* Les responsables DOIVENT fusionner les demandes de fusion par écrasement.
 Le {term-repository} DOIT désactiver les commits de fusion et la fusion par rebasage.
-Chaque demande de tirage devient alors un seul commit signé sur `main`.
+Chaque demande de fusion devient alors un seul commit signé sur `main`.
 GitHub ne peut pas signer les commits qu’il réécrit lors d’un rebasage.
 
 [[VCS-105]]
-*VCS-105.* Le titre d’une demande de tirage DOIT suivre link:https://www.conventionalcommits.org/fr/v1.0.0/[Conventional Commits 1.0.0].
+*VCS-105.* Le titre d’une demande de fusion DOIT suivre link:https://www.conventionalcommits.org/fr/v1.0.0/[Conventional Commits 1.0.0].
 Le titre devient le message du commit écrasé.
 
 == Versions
@@ -57,7 +57,7 @@ Git et GitHub acceptent la signature {abbr-ssh} avec la clé que la plupart des 
 == Protection des branches
 
 [[VCS-109]]
-*VCS-109.* Les branches `main` et `release/*` DOIVENT exiger une demande de tirage et des commits signés.
+*VCS-109.* Les branches `main` et `release/*` DOIVENT exiger une demande de fusion et des commits signés.
 Chaque modification passe alors par une révision et a un auteur connu.
 
 [[VCS-110]]
@@ -80,4 +80,5 @@ L’historique publié reste alors tel que le projet l’a publié.
 |0.1.1 |2026-11-01 |VCS-107 : une branche de version n’est créée qu’après la sortie de la version majeure suivante. VCS-108 : Sigstore gitsign n’est plus mentionné.
 |0.2.0 |2026-11-03 |Les abréviations et les termes définis renvoient au glossaire. Aucune règle ne change.
 |0.2.1 |2026-11-04 |Liens vers les normes externes et références ajoutées.
+|0.3.1 |2026-11-09 |Texte français seulement : « demande de fusion » remplace « demande de tirage ». Aucune règle ne change.
 |===

@@ -55,4 +55,5 @@ A no-reply address keeps a personal address out of public view.
 |0.2.0 |2026-11-03 |Abbreviations and defined terms link to the glossary. No rule changes.
 |0.2.1 |2026-11-04 |Linked outside standards and added references.
 |0.3.0 |2026-11-07 |VCS-006: a no-reply address is now optional (MAY). Each contributor chooses.
+|0.3.1 |2026-11-09 |French text only: « demande de fusion » replaces « demande de tirage » for pull request. No rule changes.
 |===

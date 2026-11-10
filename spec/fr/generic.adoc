@@ -8,12 +8,12 @@ Elles portent sur les commits, leurs messages et l’identité des auteurs.
 
 [[VCS-001]]
 *VCS-001.* L’auteur DOIT signer chaque commit avec une clé cryptographique.
-La signature prouve qui a fait chaque commit d’une demande de tirage.
+La signature prouve qui a fait chaque commit d’une demande de fusion.
 Personne ne peut alors ajouter un commit au nom d’une autre personne.
 Après une fusion par écrasement, GitHub signe le commit unique sur `main` avec sa propre clé.
 
 [[VCS-002]]
-*VCS-002.* Le {term-repository} DOIT refuser les commits non signés sur les branches protégées et dans les demandes de tirage.
+*VCS-002.* Le {term-repository} DOIT refuser les commits non signés sur les branches protégées et dans les demandes de fusion.
 La règle de signature ne tient que si le serveur l’applique.
 
 == Messages de commit
@@ -51,8 +51,9 @@ Une adresse sans réponse garde une adresse personnelle hors de la vue du public
 |===
 |Version |Date |Changement
 |0.1.0 |2026-11-01 |Première version.
-|0.1.1 |2026-11-01 |VCS-001 : la justification tient compte de la fusion par écrasement. VCS-002 : les demandes de tirage refusent aussi les commits non signés.
+|0.1.1 |2026-11-01 |VCS-001 : la justification tient compte de la fusion par écrasement. VCS-002 : les demandes de fusion refusent aussi les commits non signés.
 |0.2.0 |2026-11-03 |Les abréviations et les termes définis renvoient au glossaire. Aucune règle ne change.
 |0.2.1 |2026-11-04 |Liens vers les normes externes et références ajoutées.
 |0.3.0 |2026-11-07 |VCS-006 : l’adresse sans réponse est maintenant facultative (PEUT). Chaque personne choisit.
+|0.3.1 |2026-11-09 |Texte français seulement : « demande de fusion » remplace « demande de tirage ». Aucune règle ne change.
 |===

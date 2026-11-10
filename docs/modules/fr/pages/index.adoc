@@ -37,7 +37,7 @@ Exemples : `feat/registry-search`, `fix/broken-link`, `docs/signing-guide`.
 
 == Fusionner et publier une version
 
-Donnez à chaque demande de tirage un titre link:https://www.conventionalcommits.org/fr/v1.0.0/[Conventional Commits], comme `feat: add registry search`.
+Donnez à chaque demande de fusion un titre link:https://www.conventionalcommits.org/fr/v1.0.0/[Conventional Commits], comme `feat: add registry search`.
 Fusionnez-la avec le bouton d’écrasement.
 Pour publier une version, posez une étiquette signée sur `main` :
 

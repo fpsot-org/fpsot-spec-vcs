@@ -16,7 +16,7 @@ rows:
     requirement: {en: Commit messages follow Conventional Commits., fr: Les messages de commit suivent Conventional Commits.}
     international: {en: "Each message starts with a type such as feat or fix, an optional scope, then a colon and a space.", fr: "Chaque message commence par un type comme feat ou fix, une portée facultative, puis un deux-points et une espace."}
     international_source: {title: "Conventional Commits", version: "1.0.0", url: "https://www.conventionalcommits.org/en/v1.0.0/", archive: "https://web.archive.org/web/20261101153816/https://www.conventionalcommits.org/en/v1.0.0/"}
-    fpsot: {en: "Conventional Commits 1.0.0 for every commit message and pull request title.", fr: "Conventional Commits 1.0.0 pour chaque message de commit et chaque titre de demande de tirage."}
+    fpsot: {en: "Conventional Commits 1.0.0 for every commit message and pull request title.", fr: "Conventional Commits 1.0.0 pour chaque message de commit et chaque titre de demande de fusion."}
   - id: VCS-106
     topic: releases
     requirement: {en: A release is a signed vX.Y.Z tag., fr: Une version est une étiquette signée vX.Y.Z.}
@@ -28,4 +28,4 @@ rows:
     requirement: {en: Protected branches block force-pushes and deletion., fr: Les branches protégées bloquent les poussées forcées et la suppression.}
     international: {en: "The primary branch rejects direct commits. Deleting it needs an explicit confirmation.", fr: "La branche principale refuse les commits directs. Sa suppression demande une confirmation explicite."}
     international_source: {title: "OpenSSF Open Source Project Security Baseline, OSPS-AC-03", version: "v2026.08.28", date: "2026-08-28", url: "https://baseline.openssf.org/versions/2026-08-28", archive: "https://github.com/ossf/security-baseline/blob/a26a7963f6fd098c1e82829322ec9e1196a4f294/baseline/OSPS-AC.yaml#L67"}
-    fpsot: {en: "main and release branches block force-pushes and deletion, and need a pull request.", fr: "Les branches main et de version bloquent les poussées forcées et la suppression, et exigent une demande de tirage."}
+    fpsot: {en: "main and release branches block force-pushes and deletion, and need a pull request.", fr: "Les branches main et de version bloquent les poussées forcées et la suppression, et exigent une demande de fusion."}
